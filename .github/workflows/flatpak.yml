@@ -14,8 +14,8 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y flatpak flatpak-builder
-        flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-        flatpak install flathub org.freedesktop.Sdk//25.08 org.freedesktop.Platform//25.08 -y
+        sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+        sudo flatpak install flathub org.freedesktop.Sdk//25.08 org.freedesktop.Platform//25.08 -y
         flatpak-builder --repo=repo --force-clean build-dir org.akashdh11.skystream.json
         flatpak build-bundle repo skystream.flatpak org.akashdh11.skystream
 
