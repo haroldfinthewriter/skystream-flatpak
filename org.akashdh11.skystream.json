@@ -19,6 +19,11 @@
                     "type": "archive",
                     "url": "https://github.com/akashdh11/skystream/releases/download/v2.8.1/skystream-linux-x64-v2.8.1.tar.gz",
                     "sha256": "7931e3a13c7770a92ad70ef519dcff4a31b5e6966350398a6829aae2c031a363"
+                },
+                {
+                    "type": "file",
+                    "path": "org.akashdh11.skystream.desktop",
+                    "dest-filename": "org.akashdh11.skystream.desktop"
                 }
             ]
         }
